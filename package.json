@@ -1,0 +1,39 @@
+{
+  "name": "static-electricity",
+  "version": "1.0.0",
+  "description": "FP library with rich static-land support",
+  "main": "dist/nodejs/index",
+  "scripts": {
+    "build:nodejs": "gulp build-nodeJS",
+    "build": "npm run build:nodejs",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1point7point4/static-electricity.git"
+  },
+  "keywords": [
+    "static-land",
+    "tacocat-spelled-backwards-is-tacocat",
+    "fp",
+    "functional",
+    "functional-programming",
+    "util",
+    "utility",
+    "utilities"
+  ],
+  "author": "1point7point4 <1point7point4@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/1point7point4/static-electricity/issues"
+  },
+  "homepage": "https://github.com/1point7point4/static-electricity#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "mocha": "^6.1.4"
+  }
+}
