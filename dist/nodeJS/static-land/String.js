@@ -5,7 +5,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 const String = {
-  typeName: "String"
+  typeName: "String",
+  equals: x => y => x === y
 };
 var _default = String;
 exports.default = _default;

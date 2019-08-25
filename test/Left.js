@@ -1,10 +1,10 @@
 const Left = require ("../dist/nodejs/Left").default;
 const assert = require ("assert");
+const canon = "static-land/canonical";
 
 describe (
   "Left",
   () => {
-    const canon = "static-land/canonical";
 
     describe (
       `#${canon}`,

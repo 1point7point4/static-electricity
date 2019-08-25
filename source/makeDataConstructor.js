@@ -35,7 +35,12 @@ const makeDataConstructor = (options) => {
     return dataConstructorResult ([], canonicalModule, type, tag, contains);
   }
 
-  const dataConstructor_ = rest => last => {
+  const dataConstructor_ = rest_ => last => {
+
+    /* We need to clone `rest_`, or else we can end up with nasty and
+     * hard-to-track bugs
+     */
+    const rest = rest_.slice (0);
     rest.push (last);
 
     // If all arguments have been supplied, return the result.
@@ -51,7 +56,7 @@ const makeDataConstructor = (options) => {
     }
 
     // Otherwise, return a partially applied function.
-    return dataConstructor_ (rest.slice (0));
+    return dataConstructor_ (rest);
   }
 
   const dataConstructor = dataConstructor_ ([]);

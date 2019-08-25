@@ -21,15 +21,21 @@ const typeofTable = {
 const canon = x => {
   if (x === null) return Null;
 
+  if (x === undefined) {
+    const err = Error ("x === undefined");
+    throw err;
+  }
+
   if (typeof x["static-land/canonical"] === "function") {
     return x["static-land/canonical"];
   }
 
-  if (typeofTable.hasOwnProperty (typeof x)) return typeofTable[x];
+  if (typeofTable.hasOwnProperty (typeof x)) return typeofTable[typeof x];
 
   // TODO: Support other builtin types.like `Array`.
 
-  throw Error (`${x} does not have a valid canonical module`);
+  const err = Error (`${x} does not have a valid canonical module`);
+  throw err;
 };
 
 export default canon;
