@@ -1,4 +1,4 @@
-const match2 = strMap => (x) => (y) {
+const match2 = strMap => (x) => (y) => {
   if (x == null || x.tag == null) {
     const err = "Missing `tag` property on first argument";
     throw err;
@@ -14,7 +14,7 @@ const match2 = strMap => (x) => (y) {
 
   if ("_" in strMap) return strMap._ (x) (y);
 
-  throw Error (`Unexpected tags "${tags}"`);  
+  throw Error (`Unexpected tags "${tags}"`);
 };
 
-export default match;
+export default match2;

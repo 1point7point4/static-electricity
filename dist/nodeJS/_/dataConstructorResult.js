@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _default = (dataConstructorArguments, canonicalModule, type, tag, propertyNames) => {
+const dataConstructorResult = (dataConstructorArguments, canonicalModule, type, tag, propertyNames, constructor = null) => {
   const result = {
     get "static-land/canonical"() {
       return canonicalModule;
@@ -17,6 +17,15 @@ var _default = (dataConstructorArguments, canonicalModule, type, tag, propertyNa
 
     get tag() {
       return tag;
+    },
+
+    get dataConstructor() {
+      /* Nullary constructors like `Nothing` are their own constructor.
+       *
+       * Non-nullary constructors like `Just` are not - they are the constructor
+       * of the result of what they are applied to.
+       */
+      return constructor || result;
     }
 
   };
@@ -28,4 +37,5 @@ var _default = (dataConstructorArguments, canonicalModule, type, tag, propertyNa
   return result;
 };
 
+var _default = dataConstructorResult;
 exports.default = _default;

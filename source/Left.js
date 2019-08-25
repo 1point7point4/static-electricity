@@ -1,8 +1,8 @@
-import Maybe from "./static-land/Maybe";
+import Either from "./static-land/Either";
 import makeDataConstructor from "./makeDataConstructor";
 
 export default makeDataConstructor ({
-  canonicalModule: Maybe,
+  canonicalModule: Either,
   tag: "Left",
   contains: ["value"]
 });

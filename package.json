@@ -6,7 +6,7 @@
   "scripts": {
     "build:nodejs": "gulp build-nodeJS",
     "build": "npm run build:nodejs",
-    "test": "mocha"
+    "test": "npm run build:nodejs && mocha"
   },
   "repository": {
     "type": "git",
@@ -20,11 +20,14 @@
     "functional-programming",
     "util",
     "utility",
-    "utilities"
+    "utilities",
+    "awfully-specific-tag-nobody-will-ever-use"
   ],
   "author": "1point7point4 <1point7point4@gmail.com>",
   "license": "MIT",
   "bugs": {
+    "quantity": "possibly infinite",
+    "quality": "over 9000",
     "url": "https://github.com/1point7point4/static-electricity/issues"
   },
   "homepage": "https://github.com/1point7point4/static-electricity#readme",

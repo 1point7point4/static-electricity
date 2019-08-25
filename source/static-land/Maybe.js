@@ -1,10 +1,7 @@
 import match2 from "../match2";
 import Canon from "./Canon";
-import Nothing from "../Nothing";
-import Just from "../Just";
 
 const Maybe = {
-
   typeName: "Maybe",
 
   liftEquals1: equals => match2 ({
@@ -25,17 +22,20 @@ const Maybe = {
   }),
 
   map: f => match ({
-    Nothing: _ => Nothing,
+    Nothing: x => x,
     Just: ({value}) => Just (f (value))
   }),
 
   foldl: f => acc => match ({
     Nothing: _ => acc,
-    Just: ({value})
+    Just: ({value}) => f (value) (acc)
+  })
 };
 
-Maybe.equals = liftEquals1 (Canon.equals);
-Maybe.lte = liftLte1 (Canon.lte);
-Maybe.show = liftLte1 (Canon.show);
+console.log ("log: ", "this works");
+
+Maybe.equals = Maybe.liftEquals1 (Canon.equals);
+Maybe.lte = Maybe.liftLte1 (Canon.lte);
+Maybe.show = Maybe.liftLte1 (Canon.show);
 
 export default Maybe;

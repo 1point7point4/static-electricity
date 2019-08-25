@@ -9,13 +9,13 @@ describe (
     describe (
       `#${canon}`,
       () => {
-        const Maybe = require ("../dist/nodejs/static-land/Maybe").default;
+        const Either = require ("../dist/nodejs/static-land/Either").default;
 
         it (
-          "should be `Maybe` from `source/static-land/Maybe`",
-          () => assert.equal (Left (123)[canon], Maybe)
+          "should be `Either` from `source/static-land/Either`",
+          () => assert.equal (Left ("foo")[canon], Either)
         );
       }
-    )
+    );
   }
 );

@@ -38,11 +38,12 @@ const makeDataConstructor = options => {
   }
 
   const dataConstructor_ = rest => last => {
-    rest.push(last);
+    rest.push(last); // If all arguments have been supplied, return the result.
 
     if (contains.length === rest.length) {
-      return (0, _dataConstructorResult.default)(rest, canonicalModule, type, tag, contains);
-    }
+      return (0, _dataConstructorResult.default)(rest, canonicalModule, type, tag, contains, dataConstructor);
+    } // Otherwise, return a partially applied function.
+
 
     return dataConstructor_(rest.slice(0));
   };

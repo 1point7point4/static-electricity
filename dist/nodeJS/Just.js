@@ -5,16 +5,16 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _Either = _interopRequireDefault(require("./static-land/Either"));
+var _Maybe = _interopRequireDefault(require("./static-land/Maybe"));
 
 var _makeDataConstructor = _interopRequireDefault(require("./makeDataConstructor"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _default = (0, _makeDataConstructor.default)({
-  canonicalModule: _Either.default,
-  tag: "Left",
+const Just = (0, _makeDataConstructor.default)({
+  canonicalModule: _Maybe.default,
+  tag: "Just",
   contains: ["value"]
 });
-
+var _default = Just;
 exports.default = _default;
