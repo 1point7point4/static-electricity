@@ -1,6 +1,6 @@
 {
   "name": "static-electricity",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha",
   "description": "FP library with rich static-land support",
   "main": "dist/nodejs/index",
   "scripts": {
