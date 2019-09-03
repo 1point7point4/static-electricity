@@ -1,6 +1,6 @@
 {
   "name": "static-electricity",
-  "version": "1.0.0-alpha",
+  "version": "1.0.1-alpha",
   "description": "FP library with rich static-land support",
   "main": "dist/nodejs/index",
   "scripts": {
@@ -32,11 +32,11 @@
   },
   "homepage": "https://github.com/1point7point4/static-electricity#readme",
   "dependencies": {
-    "esprima": "^4.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
+    "esprima": "^4.0.1",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "mocha": "^6.1.4"
