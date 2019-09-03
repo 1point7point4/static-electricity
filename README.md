@@ -1,5 +1,7 @@
 # static-electricity
 
+⚠️ This library only barely works. It should not be used for production code ⚠️
+
 FP library with rich static-land support.
 
 ## Features

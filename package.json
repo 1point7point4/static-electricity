@@ -31,7 +31,9 @@
     "url": "https://github.com/1point7point4/static-electricity/issues"
   },
   "homepage": "https://github.com/1point7point4/static-electricity#readme",
-  "dependencies": {},
+  "dependencies": {
+    "esprima": "^4.0.1"
+  },
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
