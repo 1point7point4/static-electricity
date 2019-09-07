@@ -11,7 +11,7 @@ describe (
         let staticElectricity;
 
         it (
-          "Can be imported without syntax errors",
+          "Can be imported without errors",
           () => {
             staticElectricity = require ("../dist/nodejs/index");
           }
