@@ -32,8 +32,6 @@ const Maybe = {
   })
 };
 
-console.log ("log: ", "this works");
-
 Maybe.equals = Maybe.liftEquals1 (Canon.equals);
 Maybe.lte = Maybe.liftLte1 (Canon.lte);
 Maybe.show = Maybe.liftLte1 (Canon.show);

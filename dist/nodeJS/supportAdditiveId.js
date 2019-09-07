@@ -9,7 +9,7 @@ var _AdditiveId = _interopRequireDefault(require("./AdditiveId.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-const supportId = ({
+const supportAdditiveId = ({
   additiveId,
   add
 }) => {

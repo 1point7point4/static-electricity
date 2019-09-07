@@ -1,6 +1,6 @@
 import AdditiveId from "./AdditiveId.js";
 
-const supportId = ({additiveId, add}) => {
+const supportAdditiveId = ({additiveId, add}) => {
 
   // See [NOTE: values of type `() -> a`] at "static-land/Canon.js".
   const additiveIdValue = additiveId ();

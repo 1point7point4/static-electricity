@@ -50,7 +50,6 @@ const Maybe = {
     }) => f(value)(acc)
   })
 };
-console.log("log: ", "this works");
 Maybe.equals = Maybe.liftEquals1(_Canon.default.equals);
 Maybe.lte = Maybe.liftLte1(_Canon.default.lte);
 Maybe.show = Maybe.liftLte1(_Canon.default.show);

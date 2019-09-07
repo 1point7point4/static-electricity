@@ -1,6 +1,6 @@
 import MultiplicativeId from "./MultiplicativeId.js";
 
-const supportId = ({multiplicativeId, multiply}) => {
+const supportMultiplicativeId = ({multiplicativeId, multiply}) => {
 
   // See [NOTE: values of type `() -> a`] at "static-land/Canon.js".
   const multiplicativeIdValue = multiplicativeId ();

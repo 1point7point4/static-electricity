@@ -9,7 +9,7 @@ var _MultiplicativeId = _interopRequireDefault(require("./MultiplicativeId.js"))
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-const supportId = ({
+const supportMultiplicativeId = ({
   multiplicativeId,
   multiply
 }) => {
