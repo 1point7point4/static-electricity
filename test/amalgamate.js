@@ -18,7 +18,7 @@ describe (
         const chant = amalgamate (x => y => `${y} ${x}!`) (y => `${y}!`);
 
         assert.equal (chant (string), `${string}! ${string}!`);
-      })
+      }
     );
   }
 );

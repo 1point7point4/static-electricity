@@ -9,6 +9,12 @@ Object.defineProperty(exports, "always", {
     return _always.default;
   }
 });
+Object.defineProperty(exports, "amalgamate", {
+  enumerable: true,
+  get: function () {
+    return _amalgamate.default;
+  }
+});
 Object.defineProperty(exports, "id", {
   enumerable: true,
   get: function () {
@@ -17,6 +23,8 @@ Object.defineProperty(exports, "id", {
 });
 
 var _always = _interopRequireDefault(require("./always"));
+
+var _amalgamate = _interopRequireDefault(require("./amalgamate"));
 
 var _id = _interopRequireDefault(require("./id"));
 
