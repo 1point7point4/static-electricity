@@ -9,7 +9,15 @@ Object.defineProperty(exports, "always", {
     return _always.default;
   }
 });
+Object.defineProperty(exports, "id", {
+  enumerable: true,
+  get: function () {
+    return _id.default;
+  }
+});
 
 var _always = _interopRequireDefault(require("./always"));
+
+var _id = _interopRequireDefault(require("./id"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
