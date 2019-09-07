@@ -6,7 +6,7 @@ describe (
   () => {
     it (
       "Should take two arguments, and return the first one.",
-      () => assert.equal (always ("x") ("y")) ("x")
+      () => assert.equal (always ("x") ("y"), "x")
     );
   }
 );
