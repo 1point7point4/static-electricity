@@ -2,10 +2,10 @@ const amalgamate = require ("../dist/nodejs/combinators/amalgamate").default;
 const assert = require ("assert");
 
 describe (
-  "substitution",
+  "amalgamate",
   () => {
     it (
-      "Should take three arguments, then apply the first to the third and the result of the second applied to the third",
+      "Should be f => g => x => f (x) (g (x))",
       () => {
         const number = Math.random ();
 
