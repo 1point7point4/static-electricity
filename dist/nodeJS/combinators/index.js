@@ -15,6 +15,12 @@ Object.defineProperty(exports, "amalgamate", {
     return _amalgamate.default;
   }
 });
+Object.defineProperty(exports, "apply", {
+  enumerable: true,
+  get: function () {
+    return _apply.default;
+  }
+});
 Object.defineProperty(exports, "applyToSelf", {
   enumerable: true,
   get: function () {
@@ -31,6 +37,8 @@ Object.defineProperty(exports, "id", {
 var _always = _interopRequireDefault(require("./always"));
 
 var _amalgamate = _interopRequireDefault(require("./amalgamate"));
+
+var _apply = _interopRequireDefault(require("./apply"));
 
 var _applyToSelf = _interopRequireDefault(require("./applyToSelf"));
 
