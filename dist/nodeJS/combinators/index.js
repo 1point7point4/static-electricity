@@ -33,6 +33,12 @@ Object.defineProperty(exports, "id", {
     return _id.default;
   }
 });
+Object.defineProperty(exports, "thrush", {
+  enumerable: true,
+  get: function () {
+    return _thrush.default;
+  }
+});
 
 var _always = _interopRequireDefault(require("./always"));
 
@@ -43,5 +49,7 @@ var _apply = _interopRequireDefault(require("./apply"));
 var _applyToSelf = _interopRequireDefault(require("./applyToSelf"));
 
 var _id = _interopRequireDefault(require("./id"));
+
+var _thrush = _interopRequireDefault(require("./thrush"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
