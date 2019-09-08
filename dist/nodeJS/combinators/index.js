@@ -27,6 +27,12 @@ Object.defineProperty(exports, "applyToSelf", {
     return _applyToSelf.default;
   }
 });
+Object.defineProperty(exports, "compose", {
+  enumerable: true,
+  get: function () {
+    return _compose.default;
+  }
+});
 Object.defineProperty(exports, "id", {
   enumerable: true,
   get: function () {
@@ -47,6 +53,8 @@ var _amalgamate = _interopRequireDefault(require("./amalgamate"));
 var _apply = _interopRequireDefault(require("./apply"));
 
 var _applyToSelf = _interopRequireDefault(require("./applyToSelf"));
+
+var _compose = _interopRequireDefault(require("./compose"));
 
 var _id = _interopRequireDefault(require("./id"));
 
