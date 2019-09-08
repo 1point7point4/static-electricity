@@ -25,3 +25,4 @@ export {default as supportBounded} from "./supportBounded";
 export {default as supportEmpty} from "./supportEmpty";
 export {default as supportId} from "./supportId";
 export {default as supportMultiplicativeId} from "./supportMultiplicativeId";
+export {default as validate} from "./validate";

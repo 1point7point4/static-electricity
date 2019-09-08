@@ -129,6 +129,12 @@ Object.defineProperty(exports, "supportMultiplicativeId", {
     return _supportMultiplicativeId.default;
   }
 });
+Object.defineProperty(exports, "validate", {
+  enumerable: true,
+  get: function () {
+    return _validate.default;
+  }
+});
 
 var _AdditiveId = _interopRequireDefault(require("./AdditiveId"));
 
@@ -171,6 +177,8 @@ var _supportEmpty = _interopRequireDefault(require("./supportEmpty"));
 var _supportId = _interopRequireDefault(require("./supportId"));
 
 var _supportMultiplicativeId = _interopRequireDefault(require("./supportMultiplicativeId"));
+
+var _validate = _interopRequireDefault(require("./validate"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
