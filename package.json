@@ -6,7 +6,8 @@
   "scripts": {
     "build:nodejs": "gulp build-nodeJS",
     "build": "npm run build:nodejs",
-    "test": "npm run build:nodejs && mocha"
+    "test": "npm run build:nodejs && mocha",
+    "try-to-commit-with-message": "npm run test && git add . && git commit -m $1"
   },
   "repository": {
     "type": "git",
