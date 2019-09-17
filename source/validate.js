@@ -32,6 +32,8 @@
  * ```
  */
 
+// TODO: Fix teh bugs
+
 const validate = expectedFormat => options => {
   Object.entries (expectedFormat).forEach (
     ([optionName_, predicate]) => {
@@ -40,7 +42,7 @@ const validate = expectedFormat => options => {
 
       if (optionName_[optionName_.length - 1] === "*") {
         optionName = optionName_.slice (0, -1);
-        optional = false;
+        required = false;
       } else optionName = optionName_;
 
       if (!({}).hasOwnProperty.call (options, optionName)) {
@@ -48,7 +50,8 @@ const validate = expectedFormat => options => {
 
       // Check if the "predicate" is actually a constructor
       } else if (predicate.prototype) {
-        if (!(options[optionName] instanceof predicate.prototype)) {
+
+        if (options[optionName].constructor !== predicate) {
           throw TypeError (
             `Expected option "${optionName}" to have type \`${expectedFormat[optionName].name}\``
           );

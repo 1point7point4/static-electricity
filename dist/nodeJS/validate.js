@@ -38,6 +38,7 @@ exports.default = void 0;
  * }); // → {name: "Anon1234"}
  * ```
  */
+// TODO: Fix teh bugs
 const validate = expectedFormat => options => {
   Object.entries(expectedFormat).forEach(([optionName_, predicate]) => {
     let required = true;
@@ -45,13 +46,13 @@ const validate = expectedFormat => options => {
 
     if (optionName_[optionName_.length - 1] === "*") {
       optionName = optionName_.slice(0, -1);
-      optional = false;
+      required = false;
     } else optionName = optionName_;
 
     if (!{}.hasOwnProperty.call(options, optionName)) {
       if (required) throw Error(`Missing option "${optionName}"`); // Check if the "predicate" is actually a constructor
     } else if (predicate.prototype) {
-      if (!(options[optionName] instanceof predicate.prototype)) {
+      if (options[optionName].constructor !== predicate) {
         throw TypeError(`Expected option "${optionName}" to have type \`${expectedFormat[optionName].name}\``);
       }
     } else if (!predicate(options[optionName])) {
